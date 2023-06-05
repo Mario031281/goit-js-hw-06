@@ -14,4 +14,11 @@ const images = [
 ];
 
 // Напиши скрипт для створення галереї зображень на підставі масиву даних. HTML містить список ul.gallery.
-const gallery = document.querySelector;
+
+const gallery = document.querySelector("ul.gallery");
+const markup = images.map(
+  ({ url, alt }) => `<li><img src='${url}' alt = '${alt}' width = "200"></li>`
+);
+gallery.insertAdjacentHTML("afterbegin", markup);
+gallery.style.display = "flex";
+gallery.style.listStyle = "none";
