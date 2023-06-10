@@ -29,5 +29,10 @@ console.log(data);
 // console.log(btnCreate);
 // const btnDestroy = document("button[data-destroy]");
 // console.log(btnDestroy);
+
+// [...data.children].forEach((item) => item.addEventListener("click", onClick));
+// function onClick(evt) {
+//   console.log(evt.currentTarget);
+// }
 const boxes = document.querySelector("#boxes");
 console.log(boxes);
